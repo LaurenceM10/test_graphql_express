@@ -7,7 +7,7 @@ var schema = buildSchema(`
   type Query {
     name: String!,
     username: String!,
-    email: String!
+    age: Int!
   }
 `);
 
