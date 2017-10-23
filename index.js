@@ -13,9 +13,9 @@ var schema = buildSchema(`
 
 // The root provides a resolver function for each API endpoint
 var root = {
-  name: () => ('Laurence Steven'),
-  username: () => ('LaurenceM10'),
-  email: () => ('nombre@correo')
+  name: () => 'Laurence Steven',
+  username: () => 'LaurenceM10',
+  email: () => 'nombre@correo'
 };
 
 var app = express();
