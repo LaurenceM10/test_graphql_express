@@ -6,18 +6,16 @@ var { buildSchema } = require('graphql');
 var schema = buildSchema(`
   type Query {
     name: String,
-    username: String
+    username: String,
+    email: String
   }
 `);
 
 // The root provides a resolver function for each API endpoint
 var root = {
-  name: () => {
-    return 'Laurence Steven';
-  },
-  username: () => {
-    return 'LaurenceM10'
-  }
+  name: () => ('Laurence Steven'),
+  username: () => ('LaurenceM10'),
+  email: () => ('nombre@correo')
 };
 
 var app = express();
