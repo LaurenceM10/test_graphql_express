@@ -5,9 +5,9 @@ var { buildSchema } = require('graphql');
 // Construct a schema, using GraphQL schema language
 var schema = buildSchema(`
   type Query {
-    name: String,
-    username: String,
-    email: String
+    name: String!,
+    username: String!,
+    email: String!
   }
 `);
 
