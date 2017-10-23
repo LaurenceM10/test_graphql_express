@@ -6,7 +6,7 @@ var { buildSchema } = require('graphql');
 var schema = buildSchema(`
   type Query {
     name: String,
-    lastName: String
+    username: String
   }
 `);
 
